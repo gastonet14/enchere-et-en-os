@@ -34,7 +34,7 @@ public class ServletSeConnecter extends HttpServlet {
             response.sendRedirect("https://www.google.fr");
         } catch (BusinessException e) {
             request.setAttribute("listeCodesErreur", e.getListeCodesErreur());
-            request.getRequestDispatcher("WEb-INF/JSP/seconnecter").forward(request, response);
+            request.getRequestDispatcher("WEb-INF/JSP/seconnecter.jsp").forward(request, response);
         }  
     }
 }
